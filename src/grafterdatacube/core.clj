@@ -23,6 +23,25 @@
     )  
   )
 
+(def make-graph
+  (graph-fn [{:keys [URTEA UDALARENIZENA HERRIARENIZENA EMAKUMEKOPURUA GIZONKOPURUA jaio-herria-uri herria-uri observation-uri]
+             :as row }]
+            (graph (base-graph "ataun-2014-2015")
+                   [observation-uri
+                      [rdf:a qb:Observation]
+                      [base-observation-location herria-uri] 
+                      [base-emakume-kopurua (->integer (row "EMAKUMEKOPURUA"))] 
+                      [base-gizon-kopurua (->integer (row "GIZONKOPURUA"))]
+                      ["http://dbpedia.org/property/birthPlace" jaio-herria-uri]
+                      ["http://www.w3.org/2006/time#year" (->integer (row "URTEA"))]
+                    ]
+                   [herria-uri
+                    [rdf:a "http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa"]
+                    ]
+             )
+            )
+  )
+
 (defn convert-ataun-to-data
   "Pipeline to convert tabular Ataun demografia data into a different tabular format."
   [data-file]
@@ -36,8 +55,22 @@
       )
   )
 
-;(declare-pipeline convert-ataun-to-data [Dataset -> Dataset]
-;                  {data-file "Demografia ataun"})
+
+
+(defn convert-ataun-data-to-graph
+  "Pipeline to convert the tabular persons data sheet into graph data."
+  [dataset]
+  (-> dataset convert-ataun-to-data make-graph))
+
+
+
+(declare-pipeline convert-ataun-data-to-graph [Dataset -> (Seq Statement)]
+                  {dataset "The data file to convert into a graph."})
+
+
+
+
+
 ;(print (convert-ataun-to-data "./data/ataun-2014-2015.csv"))
 
 ; -----------------------------------------------------

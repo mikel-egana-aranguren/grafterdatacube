@@ -11,7 +11,7 @@
 (defn ->integer
   "An example transformation function that converts a string to an integer"
   [s]
-  (Integer/parseInt s))
+  (Integer/parseInt (st/trim s)))
 
 (defn urlify [sr] 
   (st/replace (st/trim sr) #"\(|\)|\s|\/|\." "-"))

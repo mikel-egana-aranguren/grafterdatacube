@@ -1,0 +1,66 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+
+<http://opendata.eurohelp.es/resource/Observation/2014-ATAUN-LLODIO-0-1> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "0"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "1"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/LLODIO> ;
+	<http://www.w3.org/2006/time#year> "2014"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
+
+<http://opendata.eurohelp.es/resource/Observation/2014-ATAUN-EJIDO--EL--0-1> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "0"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "1"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/EJIDO--EL-> ;
+	<http://www.w3.org/2006/time#year> "2014"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
+
+<http://opendata.eurohelp.es/resource/Observation/2014-ATAUN-MONTIJO-1-0> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "1"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "0"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/MONTIJO> ;
+	<http://www.w3.org/2006/time#year> "2014"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
+
+<http://opendata.eurohelp.es/resource/Observation/2015-ATAUN-LLODIO-3-5> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "3"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "5"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/LLODIO> ;
+	<http://www.w3.org/2006/time#year> "2015"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
+
+<http://opendata.eurohelp.es/resource/Observation/2015-ATAUN-EJIDO--EL--4-7> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "4"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "7"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/EJIDO--EL-> ;
+	<http://www.w3.org/2006/time#year> "2015"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
+
+<http://opendata.eurohelp.es/resource/Observation/2015-ATAUN-MONTIJO-2-58> a qb:Observation ;
+	<http://opendata.eurohelp.es/property/observation_location> <http://opendata.eurohelp.es/resource/ATAUN> ;
+	<http://opendata.eurohelp.es/property/emakume_kopurua> "2"^^xsd:int ;
+	<http://opendata.eurohelp.es/property/gizon_kopurua> "58"^^xsd:int ;
+	<http://dbpedia.org/property/birthPlace> <http://opendata.eurohelp.es/resource/MONTIJO> ;
+	<http://www.w3.org/2006/time#year> "2015"^^xsd:int .
+
+<http://opendata.eurohelp.es/resource/ATAUN> a <http://dbpedia.org/class/yago/MunicipalitiesInGipuzkoa> .
