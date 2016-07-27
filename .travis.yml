@@ -3,4 +3,6 @@ language: clojure
 jdk:
 - oraclejdk8
 
-script: lein test, lein grafter run grafterdatacube.core/convert-ataun-data-to-graph ./data/ataun-2014-2015.csv ./output/ataun-2014-2015.ttl
+script: 
+- lein test
+- lein grafter run grafterdatacube.core/convert-ataun-data-to-graph ./data/ataun-2014-2015.csv ./output/ataun-2014-2015.ttl
