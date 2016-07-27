@@ -10,9 +10,9 @@
 
 ### REPL
 
-`=> (demografia.core/convert-persons-data-to-graph "./data/ataun-2014-2015.csv")`
+`=> (grafterdatacube.core/convert-persons-data-to-graph "./data/ataun-2014-2015.csv")`
 
-`=> (demografia.core/convert-ataun-to-data "./data/ataun-2014-2015.csv")`
+`=> (grafterdatacube.core/convert-ataun-to-data "./data/ataun-2014-2015.csv")`
 
 ### Run as tests
 
